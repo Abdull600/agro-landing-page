@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGRO BUS</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+    <script src="https://use.fontawesome.com/e7875eb560.js"></script>
+</head>
+<body>
+    <div class="hero-img"></div>
+    <div class="wrapper">
+         <header>
+            <a class="logo" href="#">AGRO<span>Bizz</span></a>
+
+            <nav>
+                <svg class="closed" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 26 26" style=" fill:#000000;">
+                    <path d="M 21.734375 19.640625 L 19.636719 21.734375 C 19.253906 22.121094 18.628906 22.121094 18.242188 21.734375 L 13 16.496094 L 7.761719 21.734375 C 7.375 22.121094 6.746094 22.121094 6.363281 21.734375 L 4.265625 19.640625 C 3.878906 19.253906 3.878906 18.628906 4.265625 18.242188 L 9.503906 13 L 4.265625 7.761719 C 3.882813 7.371094 3.882813 6.742188 4.265625 6.363281 L 6.363281 4.265625 C 6.746094 3.878906 7.375 3.878906 7.761719 4.265625 L 13 9.507813 L 18.242188 4.265625 C 18.628906 3.878906 19.257813 3.878906 19.636719 4.265625 L 21.734375 6.359375 C 22.121094 6.746094 22.121094 7.375 21.738281 7.761719 L 16.496094 13 L 21.734375 18.242188 C 22.121094 18.628906 22.121094 19.253906 21.734375 19.640625 Z"></path>
+                </svg>
+
+                <ul>
+                    <li><a class="link" href="">Home</a></li>
+                    <li><a class="link" href="">Contact</a></li>
+                    <li><a class="link" href="">About Us</a></li>
+                </ul>
+            </nav>
+
+            <svg class="menu" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"  viewBox="0 0 24 24" style=" fill:#000000;">
+                <path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"></path>
+            </svg>
+         </header>
+
+        <section class="hero">
+            <h1>Small Scale Agro Business</h1>
+
+            <p class="sub-head">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, eaque!</p>
+        </section>
+
+        <section class="more-info">
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Lorem, ipsum</p>
+                    <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam sint aliquid voluptatem quis?</p>
+                </div>
+                <img src="resources/arisa-chattasa-mJ7ghTbKXYo-unsplash.jpg" alt="Fowls Feeding">
+            </div>
+
+            <div class="feature left">
+                <div class="content">
+                    <p class="title">Lorem, ipsum</p>
+                    <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam sint aliquid voluptatem quis?</p>
+                </div>
+                <img src="resources/jan-kopriva-LTMaAwxanGk-unsplash.jpg" alt="Photo of Plants Growing">
+            </div>
+
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Lorem, ipsum</p>
+                    <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam sint aliquid voluptatem quis?</p>
+                   
+                </div>
+                <img src="resources/wouter-supardi-salari-HE_MjmWh9eQ-unsplash.jpg" alt="Photo of corn">
+            </div>
+        </section>
+    </div>
+    <script>
+        const menu = document.querySelector('.menu');
+        const nav = document.querySelector('nav');
+        const close = document.querySelector('.closed');
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav');
+        });
+
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav');
+        })
+    </script>
+</body>
+</html>

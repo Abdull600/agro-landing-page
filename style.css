@@ -1,0 +1,240 @@
+body {
+    margin: 1.5em;
+}
+
+.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("resources/charlesdeluvio-dDva_3ORBr8-unsplash.jpg");
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 20%;
+    background-position-y: 20%;
+    /* overflow: hidden; */
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: white;
+    height: 100vh;
+    width: 50%;
+    z-index: 999;
+    text-transform: uppercase;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out ;
+}
+
+.menu {
+    width: 2.5em;
+    margin:  -.6em;
+    cursor: pointer;
+}
+
+.header-img {
+    width: 100%;
+}
+
+.feature img {
+        width: 100%;
+        object-fit: cover;
+        height: 11em;
+}
+
+.hero {
+    color: white;
+    height: 90vh;
+    margin-top: 3rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+    line-height: 3.3rem;
+}
+
+.open-nav {
+    transform: translateX(0);
+}
+
+.sub-head {
+    font-size: 1.4rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8em;
+}
+
+ul a {
+    color: black;
+    padding: .75em 2em;
+    display: block;
+}
+
+ul a:hover {
+    background: rgb(235, 235, 235);
+}
+
+.closed {
+    float: right;
+    width: 2.5em;
+    margin: 2em;
+    cursor: pointer;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.desc {
+    line-height: 1.5rem;
+}
+
+.contact-info-box {
+    margin-top: 10em;
+    background: #278ea5;
+    color: white;
+    line-height: 1.5rem;
+    position: relative;
+    left: 0;
+    right: 500px;
+    padding: .5em 1em;
+}
+
+iframe {
+    width: fit-content;
+}
+
+.contact {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contact p {
+    margin-left: 1.2em;
+    font-size: 1.2rem;
+}
+
+.icons {
+    width: 1.2em;
+}
+
+
+@media only screen and (min-width: 680px ) {
+    body {
+        margin: 1.5em 5em;
+    }    
+
+}
+
+@media only screen and (min-width: 920px ) {
+    .menu {
+          display: none;
+      }
+    
+    nav {
+        transform: translateX(0);
+        position: unset;
+        display: block;
+        width: auto;
+        height: auto;
+        background: none;
+    }
+
+    .closed {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        margin: 0;
+    }
+
+    .link {
+        color: white;
+        padding: .5em 1.5em;
+        font-size: .9rem;
+    }
+
+    .link:hover {
+        background: none;
+        text-decoration: underline;
+    }
+
+    .hero-img {
+        left: unset;
+        right: 0;
+        width: 50%;
+        height: 42em;
+    }
+
+    .logo {
+        color: black;
+    }
+
+    .logo span {
+        color: #28c7fa;
+    }
+
+    .hero {
+        color: black;
+        height: auto;
+        width: 40%;
+        margin-bottom: 35em;
+    }
+
+    .feature {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        margin-bottom: 8em;
+    }
+
+    .feature img {
+        height: 20em;
+    }
+
+    .content {
+        text-align: right;
+        width: 25em;
+    }
+
+    .left {
+        grid-template-areas: "left right";
+        grid-gap: 5.5rem;
+    }
+
+    .left > img {
+        grid-area: left;
+    }
+
+    .left > .content {
+        text-align: left;
+        width: 25em;
+        justify-self: left;
+    }
+
+}
+
